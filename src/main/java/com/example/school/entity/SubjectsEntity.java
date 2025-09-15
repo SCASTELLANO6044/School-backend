@@ -25,7 +25,7 @@ public class SubjectsEntity {
     private String description;
 
     @OneToMany(mappedBy = "nmStudentsSubjectsEntity", fetch = FetchType.LAZY)
-    private List<NmStudentsSubjects> nmStudentsSubjectsList;
+    private List<NmStudentsSubjectsEntity> nmStudentsSubjectsEntityList;
 
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "teachers_id", nullable = false)

@@ -30,5 +30,5 @@ public class StudentsEntity {
     private String email;
 
     @OneToMany(mappedBy = "nmStudentsSubjectEntity", fetch = FetchType.LAZY)
-    private List<NmStudentsSubjects> nmStudentsSubjectsList;
+    private List<NmStudentsSubjectsEntity> nmStudentsSubjectsEntityList;
 }
