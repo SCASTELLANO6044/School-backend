@@ -7,6 +7,4 @@ public interface StudentsRepository extends JpaRepository<StudentsEntity, Long> 
     StudentsEntity findByName(String name);
     StudentsEntity findByEmail(String email);
     StudentsEntity findBySchoolUlid(String schoolUlid);
-    StudentsEntity create(StudentsEntity studentsEntity);
-    StudentsEntity update(StudentsEntity studentsEntity);
 }

@@ -5,5 +5,4 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface NmStudentsSubjectsRepository extends JpaRepository<NmStudentsSubjectsEntity, Long> {
     NmStudentsSubjectsEntity findById(long id);
-    NmStudentsSubjectsEntity create(NmStudentsSubjectsEntity nmStudentsSubjectsEntity);
 }
