@@ -31,7 +31,7 @@ public class TeachersEntity {
     @Column(name = "email", nullable = false, unique = true)
     private String email;
 
-    @OneToMany(mappedBy = "subjectsEntity", fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "teachersEntity", fetch = FetchType.LAZY)
     private List<SubjectsEntity> subjectsEntityList;
 
 }

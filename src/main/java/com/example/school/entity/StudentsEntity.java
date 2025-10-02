@@ -29,6 +29,6 @@ public class StudentsEntity {
     @Column(name = "email", nullable = false, unique = true)
     private String email;
 
-    @OneToMany(mappedBy = "nmStudentsSubjectEntity", fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "studentsEntity", fetch = FetchType.LAZY)
     private List<NmStudentsSubjectsEntity> nmStudentsSubjectsEntityList;
 }
